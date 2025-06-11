@@ -1,0 +1,27 @@
+@import url('global.css');
+@import 'tailwindcss';
+@layer reset, base, tokens, recipes, utilities;
+
+html {
+  /* Bounds */
+  width: 100%;
+  height: 100%;
+
+  /* Spacing */
+  margin: 0;
+  padding: var(--html-padding);
+
+  /* Layout */
+  box-sizing: border-box;
+  overflow: hidden;
+
+  /* Style */
+  background-color: var(--html-bg);
+}
+
+body,
+#root {
+  background-color: var(--body-bg);
+  width: 100%;
+  height: 100%;
+}
