@@ -23,10 +23,10 @@ const TreeNode = (props: StyledTreeView.NodeProviderProps) => {
         fallback={
           <StyledTreeView.Item>
             <StyledTreeView.ItemIndicator>
-              <Icon icon={"lucide:CheckSquareIcon"} />
+              <Icon icon={"lucide:square-check"} />
             </StyledTreeView.ItemIndicator>
             <StyledTreeView.ItemText>
-              <Icon icon={"lucide:FileIcon"} />
+              <Icon icon={"lucide:file"} />
               {node.name}
             </StyledTreeView.ItemText>
           </StyledTreeView.Item>
@@ -35,10 +35,10 @@ const TreeNode = (props: StyledTreeView.NodeProviderProps) => {
         <StyledTreeView.Branch>
           <StyledTreeView.BranchControl>
             <StyledTreeView.BranchText>
-              <Icon icon={"lucide:FolderIcon"} /> {node.name}
+              <Icon icon={"lucide:folder"} /> {node.name}
             </StyledTreeView.BranchText>
             <StyledTreeView.BranchIndicator>
-              <Icon icon={"lucide:ChevronRightIcon"} />
+              <Icon icon={"lucide:chevron-right"} />
             </StyledTreeView.BranchIndicator>
           </StyledTreeView.BranchControl>
           <StyledTreeView.BranchContent>
