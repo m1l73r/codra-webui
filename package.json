@@ -12,19 +12,19 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@pandacss/dev": "^0.53.7",
-    "@park-ui/panda-preset": "^0.43.1",
-    "@tailwindcss/vite": "^4.0.7",
-    "tailwindcss": "^4.0.7",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.0",
-    "vite-plugin-solid": "^2.11.6"
+    "@pandacss/dev": "latest",
+    "@park-ui/panda-preset": "latest",
+    "@tailwindcss/vite": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vite-plugin-solid": "latest"
   },
   "dependencies": {
-    "@ark-ui/solid": "^5.14.0",
-    "@iconify-icon/solid": "^3.0.0",
-    "lucide-solid": "^0.514.0",
-    "solid-js": "^1.9.5",
-    "vite-tsconfig-paths": "^5.1.4"
+    "@ark-ui/solid": "latest",
+    "@iconify-icon/solid": "latest",
+    "solid-js": "latest",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-tsconfig-paths": "latest"
   }
 }

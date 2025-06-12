@@ -1,14 +1,9 @@
 
 import { createTreeCollection } from '@ark-ui/solid/tree-view'
 import { TreeView } from './ui/tree-view'
+import { ExplorerNode } from '~/messages/explorer'
 
-interface Node {
-  id: string
-  name: string
-  children?: Node[]
-}
-
-const collection = createTreeCollection<Node>({
+const collection = createTreeCollection<ExplorerNode>({
   nodeToValue: (node) => node.id,
   nodeToString: (node) => node.name,
   rootNode: {

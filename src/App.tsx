@@ -92,8 +92,13 @@ export default function App() {
         on_end={() => endResize(setSnapshotsStaticWidth, snapshotsWidth)}
       />
 
-      <div class="bg-gray-300 overflow-hidden" style={{ 'border-radius': `${cornerRadius}px` }}>
-        <Snapshots />
+      <div
+        class="relative bg-[#3b414d] h-full w-full"
+        style={{ "border-radius": `${cornerRadius}px` }}
+      >
+        <div class="absolute overflow-hidden inset-1.5 rounded">
+          <Snapshots />
+        </div>
       </div>
 
       <Resizer
@@ -111,7 +116,7 @@ export default function App() {
       </div>
 
       <div
-        class="bg-gray-500 overflow-hidden flex flex-col items-center gap-1 py-2"
+        class="bg-cyan-700 overflow-hidden flex flex-col items-center gap-2"
         style={{
           'border-radius': `${cornerRadius}px`,
           'margin-left': `${resizeWidth}px`
@@ -119,14 +124,14 @@ export default function App() {
       >
         <Icon
           icon="lucide:package"
-          class="p-1 rounded-xl hover:bg-gray-200 transition"
+          class="p-1 rounded-xl hover:bg-gray-200 transition cursor-pointer"
           on:click={toggleWidth(pacmanWidth, setPacmanWidth, pacmanStaticWidth)}
           width={40}
           height={40}
         />
         <Icon
           icon="mdi:source-branch"
-          class="p-1 rounded-xl hover:bg-gray-200 transition"
+          class="p-1 rounded-xl hover:bg-gray-200 transition cursor-pointer"
           on:click={toggleWidth(snapshotsWidth, setSnapshotsWidth, snapshotsStaticWidth)}
           width={40}
           height={40}
